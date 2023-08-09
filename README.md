@@ -26,4 +26,4 @@ Welcome to the initial release of **Desktop Icons Fix**! This utility aims to pr
 
 ## Feedback and Support
 
-If you encounter any issues, have suggestions for improvements, or need assistance, please feel free to create a post on [Github](https://github.com/mayankpatibandla/Desktop-Icons-Fix).
+If you encounter any issues, have suggestions for improvements, or need assistance, please feel free to create a post on [Github](https://github.com/mayankpatibandla/Desktop-Icons-Fix/issues).
