@@ -18,7 +18,7 @@ for f in os.listdir(publicDesktop):
 dbFiles = [os.path.join(os.environ['LOCALAPPDATA'], 'IconCache.db')]
 
 cacheDirectory = os.path.join(
-    os.environ['LOCALAPPDATA'], 'Microsoft\Windows\Explorer')
+    os.environ['LOCALAPPDATA'], r'Microsoft\Windows\Explorer')
 
 for f in os.listdir(cacheDirectory):
     if os.path.splitext(f)[1] == '.db':
