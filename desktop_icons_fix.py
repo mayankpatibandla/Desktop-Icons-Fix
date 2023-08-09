@@ -29,8 +29,10 @@ import shutil
 publicDesktop = os.path.join(os.environ["PUBLIC"], "Desktop")
 userDesktop = os.path.join(os.environ["USERPROFILE"], "Desktop")
 
+shortcutExtensions = [".lnk", ".url"]
+
 for f in os.listdir(publicDesktop):
-    if os.path.splitext(f)[1] == ".lnk":
+    if os.path.splitext(f)[1] in shortcutExtensions:
         try:
             shutil.move(os.path.join(publicDesktop, f), userDesktop)
         except shutil.Error:
