@@ -25,7 +25,7 @@ for f in os.listdir(cacheDirectory):
         dbFiles.append(os.path.join(cacheDirectory, f))
 
 for f in dbFiles:
-    if (os.path.exists(f)):
+    if os.path.exists(f):
         try:
             os.remove(f)
         except PermissionError:
