@@ -34,6 +34,9 @@ shortcutExtensions = [".lnk", ".url"]
 for f in os.listdir(publicDesktop):
     if os.path.splitext(f)[1] in shortcutExtensions:
         try:
+            userFile = os.path.join(userDesktop, f)
+            if os.path.exists(userFile):
+                os.remove(userFile)
             shutil.move(os.path.join(publicDesktop, f), userDesktop)
         except shutil.Error:
             pass
